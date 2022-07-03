@@ -62,7 +62,7 @@ public void OnClientCookiesCached(int client)
 	
 	if(sCookie[0] == '\0')
 	{
-		SetClientCookie(client, g_hHideTeammates, "1");
+		SetClientCookie(client, g_hHideTeammates, "0");
 	}
 
 	g_bHideTeammates[client] = view_as<bool>(StringToInt(sCookie));
